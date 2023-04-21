@@ -29,7 +29,6 @@ def parse_args():
     return args
 
 def main():
-
     tic = time.time()
 
     args = parse_args()
