@@ -78,4 +78,5 @@ p = (column(test_title,
             row(train_graph, val_graph)))
 
 output_file('Tables_and_Graphs.html')
+save(p)
 show(p)
