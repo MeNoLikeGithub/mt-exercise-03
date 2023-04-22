@@ -40,5 +40,19 @@ The training process can be interrupted at any time, and the best checkpoint wil
 Generate (sample) some text from a trained model with:
 
     ./scripts/generate.sh
+	
 
 
+# Run order
+
+Should have remained the same, except that the table generating script is added at the end.
+
+# Changes
+
+- Changed the source text by replacing the number on the original link with a random different number.
+- Replaced all instances of the old folder/file names (grimm/numbers) in train/download/generate scripts with the new ones (tom/4711).
+- Edited "/tools/pytorch-examples/word language model/main.py" to gather all the necessary data in lists that are then written as a csv log file at the location specified in the train-script.
+- For the creation of the models/data at different dropout levels the train script had the save-locations modified for each run.
+- Added Bokeh and Pandas to the install_packages script.
+- Created the "TablesnGraphs" python script that produces the "Tables_and_Graphs" HTML-file containing the tables and graphs of the data.
+- For the creation of the different samples the generate script had the save-location modified for each run.
